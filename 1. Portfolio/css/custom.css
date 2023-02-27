@@ -1,0 +1,502 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: #4c4747;
+  width: 100%;
+  min-height: 100%;
+  height: auto;
+  overflow-x: hidden;
+}
+.navbar-brand {
+  font-weight: bold;
+  font-family: "Titillium Web", sans-serif;
+  font-size: x-large;
+  color: white !important;
+}
+.main {
+  width: 100vw;
+  height: auto;
+}
+.bg-light {
+  background-color: rgba(106, 98, 96, 1) !important;
+}
+.nav-link {
+  color: white !important;
+}
+.nav-item::after {
+  content: '';
+  display: block;
+  width: 0px;
+  height: 2px;
+  background: #fec400;
+  transition: 0.4s
+}
+.nav-item:hover::after {
+  width: 100%
+}
+.hello {
+  position: absolute;
+  left: 5%;
+  top: 40%;
+  color: white;
+  font-family: "Titillium Web", sans-serif;
+  font-size: 25px;
+}
+.cont {
+  position: relative;
+  width: 100vw;
+}
+.name {
+  font-weight: bolder;
+  font-size: 40px;
+}
+.full {
+  font-weight: bolder;
+  font-size: 40px;
+}
+.content {
+  width: 100%;
+  height: auto;
+  background-color: #4c4747;
+}
+.personal-info-box {
+  width: 44%;
+  height: auto;
+  margin-left: 3%;
+  padding-top: 3%;
+}
+.about-box {
+  width: 65%;
+  height: auto;
+  background-color: #403b3b;
+  margin: auto;
+  margin-top: 50px;
+  box-shadow: 10px 10px 10px black;
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 2%;
+}
+#profile-picture {
+  width: 100px;
+  height: 100px;
+}
+.about-me {
+  color: white;
+  font-family: "Titillium Web", sans-serif;
+  font-size: small;
+  margin-top: 2%;
+}
+.sub-section {
+  color: white;
+  font-family: "Titillium Web", sans-serif;
+  font-size: xx-large;
+  font-weight: bolder;
+}
+.main-info {
+  color: white;
+  font-family: "Titillium Web", sans-serif;
+  font-size: small;
+  font-weight: bolder;
+}
+#skill {
+  color: white;
+  font-family: "Titillium Web", sans-serif;
+  font-size: small;
+  width: 40%;
+  height: auto;
+  padding-top: 3%;
+}
+.skill-text {
+  font-size: large;
+}
+.progress {
+  width: 95%;
+  background-color: none !important;
+}
+.services-box {
+  width: 65%;
+  height: auto;
+  background-color: #403b3b;
+  margin: auto;
+  margin-top: 50px;
+  box-shadow: 10px 10px 10px black;
+  padding: 2%;
+  text-align: center;
+}
+.services {
+  width: 65%;
+  height: auto;
+  margin: auto;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-around;
+}
+.my-services-one {
+  background-color: #2e2828;
+  width: 28%;
+  height: auto;
+  color: white;
+  font-family: "Titillium Web", sans-serif;
+  font-size: small;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2%;
+}
+.design-icon {
+  margin: auto;
+  height: 75px;
+  width: 75px;
+}
+.design-icon-text {
+  color: white;
+  font-family: "Titillium Web", sans-serif;
+  font-size: small;
+  margin: auto;
+  text-align: center;
+}
+.my-services-two {
+  background-color: #2e2828;
+  width: 28%;
+  height: auto;
+  color: white;
+  font-family: "Titillium Web", sans-serif;
+  font-size: small;
+  text-align: center;
+  padding: 1%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.code-icon {
+  height: auto;
+  width: 66px;
+  margin: auto;
+  margin-bottom: 10%;
+}
+.code-icon-text {
+  color: white;
+  font-family: "Titillium Web", sans-serif;
+  font-size: small;
+  margin: auto;
+  text-align: center;
+  margin-top: 3%;
+}
+.project-box {
+  width: 65%;
+  height: auto;
+  background-color: #403b3b;
+  margin: auto;
+  margin-top: 50px;
+  box-shadow: 10px 10px 10px black;
+  padding: 2%;
+  text-align: center;
+}
+.sub-section-project {
+  color: white;
+  font-family: "Titillium Web", sans-serif;
+  font-size: xx-large;
+  font-weight: bolder;
+  display: block;
+}
+.my-projects {
+  background-color: #2e2828;
+  width: 38%;
+  height: auto;
+  margin: auto;
+  padding: 2%;
+  margin-top: 2%;
+}
+.project-text {
+  color: blue;
+  font-family: "Titillium Web", sans-serif;
+  font-size: larger;
+  font-weight: bold;
+  text-align: center;
+}
+.project-photo {
+  width: 81%;
+  height: 79%;
+}
+.tes-box-head {
+  width: 65%;
+  height: auto;
+  background-color: #403b3b;
+  margin: auto;
+  margin-top: 50px;
+  box-shadow: 10px 10px 10px black;
+  text-align: center;
+  padding: 2%;
+}
+.tes-box {
+  padding: 2%;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+}
+.tes-1 {
+  background-color: #2e2828;
+  width: 26%;
+  height: 53%;
+  color: white;
+  font-family: "Titillium Web", sans-serif;
+  font-size: small;
+  text-align: center;
+  border-radius: 10px;
+  padding: 2%;
+}
+.head-tes {
+  margin: auto;
+}
+.tes-image {
+  width: 60px;
+  height: 60px;
+  margin: auto;
+}
+.tes-text {
+  margin: auto;
+  width: 90%;
+}
+.tes-name {
+  color: rgb(13,110,253);
+  font-family: "Titillium Web", sans-serif;
+  font-size: large;
+  font-weight: bolder;
+}
+.box-contact {
+  width: 65%;
+  height: auto;
+  background-color: #403b3b;
+  margin: auto;
+  margin-top: 140px;
+  box-shadow: 10px 10px 10px black;
+  text-align: center;
+  padding: 2%;
+}
+.contact-div {
+  width: 90%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  padding: 2%;
+}
+
+h4 {
+  color: white;
+  font-family: "Titillium Web", sans-serif;
+  font-size: larger;
+  font-weight: bolder;
+}
+.get-intouch {
+  width: 48%;
+  background-color: #2e2828;
+  color: white;
+  font-family: "Titillium Web", sans-serif;
+  padding: 2%;
+  text-align: start;
+}
+.getintouch-text {
+  text-align: start;
+  color: white;
+  font-family: "Titillium Web", sans-serif;
+  font-size: small;
+}
+.pers-info {
+  height: auto;
+  margin-top: 18%;
+  font-family: "Titillium Web", sans-serif;
+}
+.pers-info-margin-1 {
+  margin-left: 4.2%;
+  font-size: small;
+  font-family: "Titillium Web", sans-serif;
+}
+.pers-info-margin-2 {
+  margin-left: 3%;
+  font-size: small;
+  font-family: "Titillium Web", sans-serif;
+}
+.message-me {
+  background-color: #2e2828;
+  width: 50%;
+  color: white;
+  font-family: "Titillium Web", sans-serif;
+  font-size: small;
+  text-align: center;
+  padding: 2%;
+}
+#name {
+  width: 44.7%;
+  margin-bottom: 2%;
+}
+
+.form {
+  color: white;
+  font-family: "Titillium Web", sans-serif;
+  font-weight: bold;
+  text-align: start;
+}
+#email {
+  width: 44.7%;
+  margin-bottom: 2%;
+}
+#subject {
+  width: 90%;
+  margin-bottom: 2%;
+}
+#message {
+  width: 90%;
+}
+.message-button {
+  border: none;
+  border-radius: 5px;
+  width: 110px;
+  height: 24px;
+  background-color: rgb(30, 30, 255);
+  color: white;
+  font-family: "Titillium Web", sans-serif;
+  font-weight: bold;
+}
+footer {
+  position: relative;
+}
+.ibrahim {
+  color: white;
+  font-family: "Titillium Web", sans-serif;
+  text-align: center;
+  margin-top: 50px;
+  font-weight: bolder;
+}
+footer > p {
+  color: white;
+  font-family: "Titillium Web", sans-serif;
+  text-align: center;
+  margin-top: 50px;
+  font-size: 13px;
+}
+@media (max-width: 790px) {
+    .get-intouch {
+      width: 48%;
+    }
+    .message-me {
+      width: 48%;
+    }
+    .contact-div {
+        width: 100%;
+    }
+    .tes-1 {
+        width: 32%;
+    }
+  }
+@media (max-width: 600px) {
+  .hello {
+    font-size: 15px;
+    top: 50%;
+  }
+  .name {
+    font-size: 15px;
+  }
+  .full {
+    font-size: 15px;
+  }
+  .about-box {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 90%;
+    padding: 3%;
+  }
+  .about-me {
+    width: 90%;
+  }
+  .about-box {
+    width: 90%;
+  }
+  .res-about-box {
+    display: flex;
+    width: 100%;
+  }
+  .personal-info-box {
+    width: 100%;
+  }
+  #personal-info {
+    width: 60%;
+    margin-left: 3%;
+    padding-top: 2%;
+    font-size: 10px;
+  }
+  #skill {
+    width: 95%;
+    padding: 2%;
+  }
+  .services-box {
+    width: 90%;
+  }
+  .services {
+    width: 90%;
+    margin-top: 3%;
+    padding-bottom: 4%;
+    display: block;
+  }
+  .my-services-one {
+    width: 40%;
+    display: block;
+    margin: auto;
+    margin-bottom: 5%;
+    margin-top: 10%;
+    padding: 3px;
+  }
+  .code-icon {
+    margin-bottom: 10%;
+    margin-top: 10%;
+  }
+  .my-services-two {
+    width: 40%;
+    display: block;
+    margin: auto;
+  }
+  .project-box {
+    width: 90%;
+    padding-bottom: 5%;
+  }
+  .my-projects {
+    margin-top: 5%;
+  }
+  .tes-box-head {
+    width: 90%;
+  }
+  .tes-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .tes-1 {
+    width: 80%;
+    margin-bottom: 5%;
+    padding: 6%;
+  }
+  footer > p {
+    font-size: 12px;
+  }
+  .box-contact {
+    width: 90%;
+  }
+  .contact-div {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 90%;
+    margin: auto;
+  }
+  .get-intouch {
+    width: 98%;
+    padding: 3%;
+    margin-bottom: 3%;
+  }
+  .message-me {
+    width: 98%;
+    padding: 3%;
+  }
+}

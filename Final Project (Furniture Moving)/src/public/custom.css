@@ -1,0 +1,352 @@
+body {
+    height: 100%;
+    overflow-x: hidden;
+}
+.nav-item::after {
+    content: "";
+    display: block;
+    width: 0px;
+    height: 2px;
+    background: #59bfff;
+    transition: 0.4s;
+}
+.nav-item:hover::after {
+    width: 100%;
+    font-weight: bolder;
+}
+.content-section {
+    width: 85%;
+    margin: 50px auto 110px auto;
+}
+.company-section {
+    width: 85%;
+    margin: 50px auto 110px auto;
+}
+.slider-image {
+    filter: brightness(40%);
+
+}
+.slider{
+    margin-top: 50px;
+    position: relative;
+}
+.search-form{
+    position: absolute;
+    left: 5%;
+    top:5%;
+    width: 93%;
+}
+.slider-font{
+    color: white;
+    font-size: 80px;
+    font-weight: bolder;
+    font-family: sans-serif;
+}
+.p-slider-font{
+    color: white;
+    font-size: large;
+    font-family: sans-serif;
+}
+
+/* For Login and Signup Pages */
+.content-position {
+    margin-top: 70px;
+    margin-bottom: 86px;
+}
+/* For Login and Signup Pages */
+
+.nav-item {
+    font-weight: bolder;
+}
+.footer {
+    text-align: center;
+    width: 100%;
+}
+#footer-position {
+    /* position: absolute; */
+    bottom: 0px;
+    left: 0px;
+}
+.footer-down {
+    background-color: #3389be;
+    padding: 5px;
+    font-size: small;
+    margin-top: 0px;
+}
+
+.footer-upper {
+    background-color: #228fd2;
+    height: 190px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+}
+
+.footer-name {
+    font-weight: bolder;
+    color: black;
+}
+
+.footer-info {
+    text-align: start;
+}
+
+.ratings i {
+    font-size: 16px;
+    color: red;
+}
+
+.strike-text {
+    color: red;
+    text-decoration: line-through;
+}
+
+.product-image {
+    width: 100%;
+}
+
+.dot {
+    height: 7px;
+    width: 7px;
+    margin-left: 6px;
+    margin-right: 6px;
+    margin-top: 3px;
+    background-color: blue;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.spec-1 {
+    color: #938787;
+    font-size: 15px;
+}
+
+h5 {
+    font-weight: 400;
+}
+
+.para {
+    font-size: 16px;
+}
+
+.breadcrumb-container{
+    margin: 100px 0px 0px 0px;
+    padding: 15px 0px 0px 80px;
+    height: 100px;
+    width: 100%;
+    background-color: #59BFFF;
+    /* background: url('assets/images/main2.jpg') center bottom no-repeat; */
+}
+.breadcrumb-item a{
+    color: white !important;
+}
+.breadcrumb-heading{
+    color: white;
+    font-weight: bolder;
+}
+.services{
+    display: flex;
+    justify-content: space-around;
+}
+.sub-service{
+    background-color: white;
+    height: 140px;
+    width: 30%;
+}
+
+/*Rating Section in Review*/
+*{
+    margin: 0;
+    padding: 0;
+}
+.rate {
+    float: left;
+    height: 46px;
+    margin-top: 0px;
+}
+.rate:not(:checked) > input {
+    position:fixed;
+    top:-9999px;
+}
+.rate:not(:checked) > label {
+    float:right;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:30px;
+    color:#ccc;
+}
+.rate:not(:checked) > label:before {
+    content: '★ ';
+}
+.rate > input:checked ~ label {
+    color: #ffc700;
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+    color: #deb217;
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+    color: #c59b08;
+}
+.contact-info{
+    font-size: large;
+}
+
+/*Rating Section in Review*/
+/* Responsive Section */
+@media (max-width: 1025px) {
+    .search-form{
+        position: absolute;
+        left: 5%;
+        top:4%;
+    }
+    .slider-font{
+        color: white;
+        font-size: 60px;
+        font-weight: bolder;
+        font-family: sans-serif;
+    }
+    .p-slider-font{
+        color: white;
+        font-size: large;
+        font-family: sans-serif;
+    }
+}
+@media (max-width: 990px) {
+    .burger-menu-login{
+    padding-left: 140px;
+    margin: auto !important;
+    }
+}
+@media (max-width: 769px) {
+    .search-form{
+        position: absolute;
+        left: 5%;
+        top:1.5%;
+    }
+
+    .services{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+        align-items: center;
+    }
+    .sub-service{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .slider-font{
+        color: white;
+        font-size: 40px;
+        font-weight: bolder;
+        font-family: sans-serif;
+    }
+    .p-slider-font{
+        color: white;
+        font-size: large;
+        font-family: sans-serif;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .footer-upper {
+        flex-direction: column;
+        height: auto;
+        align-items: space-around;
+    }
+
+    .res{
+        margin-left: -40px;
+    }
+}
+
+@media (max-width: 500px) {
+    .slider-font{
+        color: white;
+        font-size: 20px;
+        font-weight: bolder;
+        font-family: sans-serif;
+    }
+    .p-slider-font{
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 426px) {
+        .breadcrumb-container{
+            margin: 100px 0px 0px 0px;
+            padding: 10px 0px 0px 30px;
+            height: 120px;
+            width: 100%;
+            background-color: #59BFFF;
+        }
+        .search-form{
+            position: absolute;
+            left: 5%;
+            top:1%;
+        }
+        .slider-font{
+            color: white;
+            font-size: 20px;
+            font-weight: bolder;
+            font-family: sans-serif;
+        }
+        .p-slider-font{
+            color: white;
+            font-size: smaller;
+            font-family: sans-serif;
+        }
+}
+
+@media (max-width: 376px) {
+    .breadcrumb-container{
+        margin: 100px 0px 0px 0px;
+        padding: 10px 0px 0px 30px;
+        height: 120px;
+        width: 100%;
+        background-color: #59BFFF;
+    }
+    .search-form{
+        position: absolute;
+        left: 5%;
+        top:1.2%;
+    }
+    .slider-font{
+        color: white;
+        font-size: 18px;
+        font-weight: bolder;
+        font-family: sans-serif;
+    }
+    .p-slider-font{
+        color: white;
+        font-size: smaller;
+        font-family: sans-serif;
+    }
+}
+@media (max-width: 376px) {
+    .search-form{
+        position: absolute;
+        left: 5%;
+        top:1%;
+    }
+    .slider-font{
+        font-size: 10px;
+        font-weight: bolder;
+        font-family: sans-serif;
+    }
+    .p-slider-font{
+        color: white;
+        font-size:xx-small;
+        font-family: sans-serif;
+    }
+}
+
